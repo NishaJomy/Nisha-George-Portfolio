@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/images/nisha.png);
+    background-image: url(Images/images/2.png);
     background-size:cover ;
     background-position: center;
 }
@@ -65,4 +65,34 @@ nav ul li a:hover::after{
 }
 .header-text h3 span{
     color: #ff004f;
+}
+/*-------about-------*/
+#about{
+    padding: 80px, 0;
+    color:#ababab;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.about-col-1{
+    flex-basis:35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis:60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+.font{
+    font-size:23px;
 }
