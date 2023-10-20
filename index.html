@@ -42,18 +42,59 @@
                         Developer. Proficient in Java, API Integration and JavaScript, with hands-on experience utilizing 
                         frameworks such as Spring Boot for building scalable and efficient back-end systems. I am an AWS 
                         certified cloud practitioner and proficient in clear concise technical communications. 
-                        I recently graduated from Launch Code, Saint Louis, Missouri, where I learned to build web applications 
-                        using spring-boot, Java, Angular, Rest API, MySQL, Thymeleaf, and Bootstrap.During my course, I learned the importance of working to 
-                        strict timescales and collaborating with other people to achieve an objective. 
+                        
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links">Skills</p>
-                            <p class="tab-links">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                        
+
+                            <ul>
+                                <li><span>API Integration</span><br></li>
+                                <li><span>Languages - Java, JavaScript, TypeScript, HTML/CSS</span><br></li>
+                                <li><span>Framework - Spring Boot, Angular</span><br></li>
+                                <li><span>Template Engine - Thymeleaf</span><br></li>
+                                <li><span>Database - MySql</span><br></li>
+                                <li><span>Hibernate and Spring Data JPA</span><br></li>
+                                <li><span>Cloud and Version Control Technologies - Git, GitHub, AWS EC2,AWS S3</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Launch Code-Jan 23 to August 23</span><br></li>
+                                <li><span>Food Magnet — LaunchCode Capstone Project </span><br></li>
+                                <li><span>Built a website that allows users to map, save, and view <br>their favorite or new restaurants, sorted by city of their choosing </span></li>
+                                <li><span>Used Google Places API and geocoding API to fetch restaurant information </span></li>
+                                <li><span>Used Java, SpringBoot, Spring Security, Mysql, Hibernate, Thymeleaf, Javascript and Bootstrap </span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>LaunchCode, Software Development — August 2023 </span><br></li>
+                                <li><span>AWS Certified Cloud Practitioner — September 2023 </span><br></li>
+                                <li><span>Master’s Degree in Statistics, Cochin University Of Science And Technology </span></li>
+                            </ul>
                         </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
